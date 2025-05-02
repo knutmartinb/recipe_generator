@@ -80,7 +80,7 @@ stores = st.multiselect(
 if st.button("Generer prompt til ChatGPT"):
     prompt = (
         f"Lag {'en ukesmeny' if mode == 'Ukesmeny' else 'én middag'} for {people} personer med rene råvarer.\n"
-        f"- Råvarer: {', '.join(raw_materials) if raw_materials else 'valgfritt'}\n"
+        f"- Velg én eller flere av disse råvarene: {', '.join(raw_materials) if raw_materials else 'valgfritt'}\n"
         f"- Vanskelighetsgrad: {difficulty}\n"
         f"- Forberedelsestid: {', '.join(prep_time) if prep_time else 'valgfritt'}\n"
         f"- Kategori: {', '.join(category) if category else 'valgfritt'}\n"
