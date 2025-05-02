@@ -64,7 +64,7 @@ prep_time = st.multiselect(
 )
 
 category = st.multiselect("Velg kategori", [
-    "Hverdags", "Fest", "Sunn", "Helgekos", "Usunn og digg" "Barnevennlig", "Restemat", "Tradisjonell", "Internasjonal"], default=["Hverdags"])
+    "Hverdags", "Fest", "Sunn", "Helgekos", "Usunn og digg", "Barnevennlig", "Restemat", "Tradisjonell", "Internasjonal"], default=["Hverdags"])
 people = st.number_input("Antall personer", min_value=1, max_value=20, value=3)
 price = st.slider("Maks pris per middag (kr)", min_value=50, max_value=3000, value=150)
 
